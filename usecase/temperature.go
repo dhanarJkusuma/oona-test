@@ -57,6 +57,7 @@ func GetSummary(data []models.PayloadTemperature) []models.SummaryTemperature {
 		}
 
 		mode := getKeyByMaxValue(ml)
+		sort.Float64s(mode)
 		m := float64(tmp / float64(count))
 		mean := fmt.Sprintf("%v", math.Ceil(m*100)/100)
 
