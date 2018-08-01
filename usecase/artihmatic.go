@@ -1,9 +1,10 @@
 package usecase
 
 import (
-	"idr-cardinalparser/converter"
 	"log"
 	"strings"
+
+	"github.com/dhanarJkusuma/idr-cardinalparser/converter"
 )
 
 func Calculate(input string) string {

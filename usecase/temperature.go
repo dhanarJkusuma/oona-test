@@ -2,9 +2,10 @@ package usecase
 
 import (
 	"fmt"
-	"math"
 	"oona-test/models"
 	"sort"
+
+	m "math"
 )
 
 func GetSummary(data []models.PayloadTemperature) []models.SummaryTemperature {
@@ -50,16 +51,16 @@ func GetSummary(data []models.PayloadTemperature) []models.SummaryTemperature {
 		mid := count / 2
 		if count%2 == 0 {
 			med := ((mel[mid] + mel[mid+1]) / 2)
-			median = fmt.Sprintf("%v", math.Round(med*100)/100)
+			median = fmt.Sprintf("%v", m.Round(med*100)/100)
 		} else {
 			med := mel[mid+1]
-			median = fmt.Sprintf("%v", math.Round(med*100)/100)
+			median = fmt.Sprintf("%v", m.Round(med*100)/100)
 		}
 
 		mode := getKeyByMaxValue(ml)
 		sort.Float64s(mode)
-		m := float64(tmp / float64(count))
-		mean := fmt.Sprintf("%v", math.Ceil(m*100)/100)
+		mean_ := float64(tmp / float64(count))
+		mean := fmt.Sprintf("%v", m.Ceil(mean_*100)/100)
 
 		summ := models.SummaryTemperature{
 			ID:      key,

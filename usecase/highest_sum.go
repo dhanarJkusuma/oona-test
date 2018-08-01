@@ -1,6 +1,8 @@
 package usecase
 
-import "math"
+import (
+	m "math"
+)
 
 func GetHighest(input []float64) float64 {
 	var meh, msf float64
@@ -8,8 +10,8 @@ func GetHighest(input []float64) float64 {
 	msf = input[0]
 	for i, val := range input {
 		if i >= 1 {
-			meh = math.Max(val, meh+val)
-			msf = math.Max(msf, meh)
+			meh = m.Max(val, meh+val)
+			msf = m.Max(msf, meh)
 		}
 	}
 	return msf
