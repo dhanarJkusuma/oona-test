@@ -12,6 +12,7 @@ go run main.go
 ```
 
 # Cara menjalankan jika menggunakan Docker
+- Clone repository
 - Build image
 ```
 docker build -t <nama_image> .
@@ -21,7 +22,7 @@ docker build -t <nama_image> .
 docker run --publish 8080:8080 --name test --rm <nama_image>
 ```
 
-# Testing
+# Testing (Tanpa Docker)
 Pada terminal direktori ini jalankan 
 ```
 go test usecase/arithmatic_test.go usecase/temperature_test.go usecase/highest_sum_test.go
