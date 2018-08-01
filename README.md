@@ -1,4 +1,4 @@
-## Asumsi
+## Cara Penggunaan Dan Asumsi
 
 # Cara Menggunakan
 - Clone repository di directory GOPATH/src
