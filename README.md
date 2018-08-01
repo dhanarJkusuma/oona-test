@@ -28,7 +28,7 @@ go test usecase/arithmatic_test.go usecase/temperature_test.go usecase/highest_s
 ```
 
 # Penghitungan dari huruf
-Untuk Penghitungan sendiri, saya menggunakan helper dr saya sendiri ![idr-cardinalparser](https://github.com/dhanarJkusuma/idr-cardinalparser)
+Untuk Penghitungan sendiri, saya menggunakan helper dr saya sendiri [idr-cardinalparser](https://github.com/dhanarJkusuma/idr-cardinalparser)
 Cara mengakses adalah :
 ```
 POST localhost:8080/api/v1/arithmatic`
@@ -42,7 +42,7 @@ dengan BODY
 
 # Menemukan nilai tertinggi dari total sum
 Untuk menemukan total sum, ini saya agak kurang paham, untuk sekarang saya berasumsi bahwa itu menggunakan `Kadane's algorithm`
-![Maximum Sub Array Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm)
+[Maximum Sub Array Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm)
 Cara mengakses adalah :
 
 ```
