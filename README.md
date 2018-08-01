@@ -32,7 +32,7 @@ go test usecase/arithmatic_test.go usecase/temperature_test.go usecase/highest_s
 Untuk Penghitungan sendiri, saya menggunakan helper dr saya sendiri [idr-cardinalparser](https://github.com/dhanarJkusuma/idr-cardinalparser)
 Cara mengakses adalah :
 ```
-POST localhost:8080/api/v1/arithmatic`
+POST localhost:8080/api/v1/arithmatic
 ```
 dengan BODY
 ```
